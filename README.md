@@ -1,5 +1,5 @@
 # Carb-Manager-
-My first website cloning project.
+My first website cloning project using HTML5 CSS3 & JavaScript (basics).
 
 3 Pages planned to be built:
 1. Home page
