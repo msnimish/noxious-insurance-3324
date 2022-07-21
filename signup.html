@@ -1,12 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    signup
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carb Manager: Low Carb & Keto Diet Tracker</title>
+    <link rel="stylesheet" href="./Styles/style.css" />
+    <link rel="stylesheet" href="./Styles/signup.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div class="layout-welcome">
+      <div class="container">
+        <span class="material-symbols-outlined bold"> arrow_back </span>
+        <header class="header-welcome">
+          <img src="./Styles/Images/Logo.png" alt="" />
+          <h2 class="welcome-message">
+            Let's set up your <span>account</span>
+          </h2>
+        </header>
+        <div class="welcome-content">
+          <form>
+            <div class="input-container">
+              <span class="material-symbols-outlined bold"> person </span>
+              <input
+                type="text"
+                id="name"
+                placeholder="First Name (optional)"
+              />
+            </div>
+            <div class="input-container">
+              <span class="material-symbols-outlined bold"> mail </span>
+              <input type="email" id="email" placeholder="Email Address" />
+            </div>
+            <div class="input-container">
+              <span class="material-symbols-outlined bold"> Key </span>
+              <input type="password" id="password" placeholder="Password" />
+            </div>
+            <div class="fancy-password">
+              <p>Enter a secure password</p>
+              <div>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <p>
+              By continuing to use Carb Manager, you agree to our
+              <a href="">Terms of Service</a> and <a href="">Privacy Policy</a>
+            </p>
+            <input
+              type="submit"
+              id="signup_submit"
+              class="btn_green"
+              value="Create My Account"
+            />
+          </form>
+        </div>
+        <div class="welcome-footer">
+          <div>OR</div>
+          <button class="btn_social">
+            <img
+              src="https://brandeps.com/logo-download/A/Apple-logo-vector-01.svg"
+              alt=""
+            />
+            <span>Continue with Apple</span>
+          </button>
+          <button class="btn_social">
+            <img
+              src="https://cdn.freebiesupply.com/logos/large/2x/google-g-2015-logo-png-transparent.png"
+              alt=""
+            />
+            <span>Continue with Google</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
+
+<script src="./Scripts/signup.js"></script>

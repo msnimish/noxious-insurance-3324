@@ -1,0 +1,32 @@
+.main-content{
+    width:100vw;
+}
+.hero_section{
+    width:100vw;
+    padding-top:300px;
+    position: absolute;
+    top:0px;
+    /* border: 1px solid red; */
+    background:radial-gradient(ellipse at center,#2dd29a 0,#1ca677 100%);
+    border-bottom-left-radius: 300px;
+}
+.hero_container{
+    width: 1110px;
+    /* height: auto; */
+    margin: 0px auto 0px auto;
+    position: relative;
+    /* display: flex;
+    justify-content: space-around;
+    flex-direction: row; */
+    /* border: 1px solid red; */
+}
+.hero_content{
+    display: block;
+
+}
+.hero_iphone{
+    width:40%;
+}
+.hero_iphone>img{
+    width:10%;
+}
