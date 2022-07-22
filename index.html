@@ -5,189 +5,445 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carb Manager: Low Carb & Keto Diet Tracker</title>
-    <link rel="stylesheet" href="./Styles/style.css" />
+    <!-- <link rel="stylesheet" href="./Styles/style.css" /> -->
     <link rel="stylesheet" href="./Styles/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <style>
-    </style>
   </head>
   <body>
-    <header class="site-header">
-        <div class="header_wrapper">
-            <div>
-                <a href="./index.html">
-                    <img src="./Styles/Images/LogoLight.png" alt=""/>
-                </a>
-              </div>
-              <nav class="header_nav">
-                <ul>
-                    <li>
-                        <a href="./articles.html">Features</a>
-                        <span class="material-symbols-outlined">
-                            arrow_drop_down
-                        </span>
-                    </li>
-                    <li>
-                        <a href="./articles.html">Premium</a>
-                    </li>
-                    <li>
-                        <a href="./articles.html">Recipes</a>
-                    </li>
-                    <li>
-                        <a href="./articles.html">Articles</a>
-                        <span class="material-symbols-outlined">
-                            arrow_drop_down
-                        </span>
-                    </li>
-                    <li>
-                        <a href="./cookbook.html">Cookbook</a>
-                    </li>
-                    <li>
-                        <a href="./articles.html">Support</a>
-                    </li>
-                </ul>
-              </nav>
-              <div class="header_userSettings">
-                <a href="./login.html">Log In</a>
-                <button class="btn_white" id="btn_signup">Join for free</button>
-              </div>
-        </div>
-    </header>
-    <header class="scroll_header">
-        <div class="scroll_header_wrapper">
-            <div>
-                <a href="./index.html">
-                    <img src="./Styles/Images/LogoDark.png" alt=""/>
-                </a>
-              </div>
-              <nav class="scroll_header_nav">
-                <ul>
-                    <li>
-                        <a href="./articles.html">Features</a>
-                        <span class="material-symbols-outlined">
-                            arrow_drop_down
-                        </span>
-                    </li>
-                    <li>
-                        <a href="./articles.html">Premium</a>
-                    </li>
-                    <li>
-                        <a href="./articles.html">Recipes</a>
-                    </li>
-                    <li>
-                        <a href="./articles.html">Articles</a>
-                        <span class="material-symbols-outlined">
-                            arrow_drop_down
-                        </span>
-                    </li>
-                    <li>
-                        <a href="./cookbook.html">Cookbook</a>
-                    </li>
-                    <li>
-                        <a href="./articles.html">Support</a>
-                    </li>
-                </ul>
-              </nav>
-              <div class="scroll_header_userSettings">
-                <a href="./login.html">Log In</a>
-                <button class="btn_green" id="btn_signup">Join for free</button>
-              </div>
-        </div>
-    </header>
-    <div class="main-content">
-        <section class="hero_section">
-            <div class="hero_container">
-                <div class="hero_content">
-                    <h1>Keto & Low-Carb <br> Made Easy</h1>
-                    <span>The #1 Low-Carb and Keto Diet App</span>
-                    <span>For healthy & sustainable low-carb living</span>
-                    <form>
-                        <input type="email" name="" id="">
-                        <button class="btn_red">
-                            Create Free Account
-                        </button>
-                    </form>
-                </div>
-                <div class="hero_iphone">
-                    <img src="https://www.carbmanager.com/_nuxt/img/9bfac4e.png" alt="">
-                </div>
+    <div class="page_layout">
+        <header class="site-header">
+            <div class="header_wrapper">
+                <div>
+                    <a href="./index.html">
+                        <img src="./Styles/Images/LogoLight.png" alt=""/>
+                    </a>
+                  </div>
+                  <nav class="header_nav">
+                    <ul>
+                        <li>
+                            <a href="./articles.html">Features</a>
+                            <span class="material-symbols-outlined">
+                                arrow_drop_down
+                            </span>
+                        </li>
+                        <li>
+                            <a href="./articles.html">Premium</a>
+                        </li>
+                        <li>
+                            <a href="./articles.html">Recipes</a>
+                        </li>
+                        <li>
+                            <a href="./articles.html">Articles</a>
+                            <span class="material-symbols-outlined">
+                                arrow_drop_down
+                            </span>
+                        </li>
+                        <li>
+                            <a href="./cookbook.html">Cookbook</a>
+                        </li>
+                        <li>
+                            <a href="./articles.html">Support</a>
+                        </li>
+                    </ul>
+                  </nav>
+                  <div class="header_userSettings">
+                    <a href="./login.html">Log In</a>
+                    <button class="btn_white" id="btn_signup">Join for free</button>
+                  </div>
             </div>
-        </section>
-    </div>
-    <div class="footer">
-        <div class="footer_wrapper">
-            <div class="footer_container">
+        </header>
+        <header class="scroll_header">
+            <div class="scroll_header_wrapper">
+
                 <div>
                     <a href="./index.html">
                         <img src="./Styles/Images/LogoDark.png" alt=""/>
                     </a>
-                </div>
-                <nav class="footer_nav">
-                    <ul class="menu-primary">
-                        <li><a href="./articles.html">Features</a></li>
-                        <li><a href="./articles.html">Premium</a></li>
-                        <li><a href="./articles.html">Keto Recipes</a></li>
-                        <li><a href="./cookbook.html">Keto Cookbook</a></li>
-                        <li><a href="./articles.html">Articles</a></li>
-                        <li><a href="./articles.html">About Us</a></li>
-                        <li><a href="./articles.html">Foods</a></li>
-                        <li><a href="./articles.html">Support</a></li>
-                        <li><a href="./login.html">Log In</a></li>
-                        <li><a href="./welcome.html">Join For Free</a></li>
-                    </ul>
-                    <ul class="menu-secondary">
-                        <li><a href="./articles.html">Gift Cards</a></li>
-                        <li><a href="./articles.html">Support Center</a></li>
-                        <li><a href="./articles.html">Forums</a></li>
-                        <li><a href="./articles.html">Terms of Service</a></li>
-                        <li><a href="./articles.html">Privacy Policy</a></li>
-                        <li><a href="./articles.html">Contact</a></li>
-                        <li><a href="./articles.html">System Status</a></li>
-                    </ul>
-                </nav>
-                <div class="social-media">
+                  </div>
+                  <nav class="scroll_header_nav">
                     <ul>
                         <li>
-                            <div>
-                                <a href="https://www.facebook.com/carbmanager">
-                                    <img src="https://pnggrid.com/wp-content/uploads/2021/05/FB-Logo-768x1476.png" alt="">
-                                </a>
-                            </div>
+                            <a href="./articles.html">Features</a>
+                            <span class="material-symbols-outlined">
+                                arrow_drop_down
+                            </span>
                         </li>
                         <li>
-                            <div>
-                                <a href="https://www.instagram.com/carbmanagerapp/">
-                                    <img src="https://www.logo.wine/a/logo/Instagram/Instagram-Glyph-Color-Logo.wine.svg" alt="">
-                                </a>
-                            </div>
+                            <a href="./articles.html">Premium</a>
                         </li>
                         <li>
-                            <div>
-                                <a href="https://www.pinterest.com/carbmanagerapp">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png" alt="">
-                                </a>
-                            </div>
+                            <a href="./articles.html">Recipes</a>
                         </li>
                         <li>
-                            <div>
-                                <a href="https://www.youtube.com/channel/UCmVTbl7NTm_Cd4rA8XJWUVw?sub_confirmation=1">
-                                    <img src="https://www.logo.wine/a/logo/YouTube/YouTube-Icon-Full-Color-Logo.wine.svg" alt="">
-                                </a>
-                            </div>
+                            <a href="./articles.html">Articles</a>
+                            <span class="material-symbols-outlined">
+                                arrow_drop_down
+                            </span>
+                        </li>
+                        <li>
+                            <a href="./cookbook.html">Cookbook</a>
+                        </li>
+                        <li>
+                            <a href="./articles.html">Support</a>
                         </li>
                     </ul>
-                </div>
-                <div class="footer_copyright">© 2010-2022 Wombat Apps LLC. All Rights Reserved.</div>
-                <div class="footer_disclaimer">Carb Manager's content is for informational and educational purposes only. Our website is not intended to be a substitute for professional <br>
-                medical advice, diagnosis, or treatment.</div>
+                  </nav>
+                  <div class="scroll_header_userSettings">
+                    <a href="./login.html">Log In</a>
+                    <button class="btn_green" id="btn_signup">Join for free</button>
+                  </div>
             </div>
-            <button class="scroll_to_top">
-                <span class="material-symbols-outlined bold">
-                    expand_less
-                </span>
-            </button>
+        </header>
+        <div class="main-content">
+            <section class="hero_section">
+                <div class="hero_container">
+                    <div class="hero_content">
+                        <h1>Keto & Low-Carb <br> Made Easy</h1>
+                        <p class="text_big">The #1 Low-Carb and Keto Diet App</p><br>
+                        <p class="text_small">For healthy & sustainable low-carb living</p>
+                        <form>
+                            <input type="email" placeholder="Enter email address" id="">
+                            <button class="btn_red">
+                                Create Free Account
+                            </button>
+                        </form>
+                        <div class="appLogos">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png" alt="">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/1200px-Download_on_the_App_Store_Badge.svg.png" alt="">
+                        </div>
+                    </div>
+                    <div class="hero_iphone">
+                        <img src="https://www.carbmanager.com/_nuxt/img/9bfac4e.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <div class="company_logos">
+                <img src="./Styles/Images/company logos.png" alt="">
+            </div>
+            <div class="keto_section">
+                <div class="keto_header">
+                    <h2>Get to Know Keto & Low-Carb</h2>
+                    <p>And get results in as little as <span>3 weeks</span> </p>
+                </div>
+                <ul class="keto_articles">
+                    <li class="keto_article">
+                        <div class="keto_image">
+                            <img src="https://images.prismic.io/cm-website/030dabe6-7bc1-4df7-953f-4ddf8c3f7a97_article-1%402x.png?auto=compress%2Cformat&w=0.5&auto=format&fit=max" alt="">
+                        </div>
+                        <div class="keto_content">
+                            <h1 class="keto_title">Keto for <b>you</b><span>.</span></h1>
+                            <p>Personalize your low-carb journey and meet all your important health goals. We’re more than just a Keto calorie counter. Carb Manager integrates seamlessly with FitBit, Garmin, and hundreds of other apps and devices via Apple Health and Google Fit, helping you to:</p>
+                            <ul class="keto_features">
+                                <li>
+                                    <div>
+                                        <img src="./Styles/Images/bullet1.svg" alt="">
+                                        <p>Lose weight quickly</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="./Styles/Images/bullet1.svg" alt="">
+                                        <p>Reduce inflammation</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="./Styles/Images/bullet1.svg" alt="">
+                                        <p>Optimize energy</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="./Styles/Images/bullet1.svg" alt="">
+                                        <p>Gain mental clarity</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="./Styles/Images/bullet1.svg" alt="">
+                                        <p>Restore balance</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="./Styles/Images/bullet1.svg" alt="">
+                                        <p>Manage cravings</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="keto_article rev">
+                        <div class="keto_image_2">
+                            <img src="https://images.prismic.io/cm-website/1b4d20a7-fd3b-42a0-ba35-cae306374b4a_article_2%402x.jpg?auto=compress%2Cformat&w=0.5&auto=format&fit=max" alt="">
+                        </div>
+                        <div class="keto_content margin_right">
+                            <h1 class="keto_title">Keto for <b>everyone</b><span>.</span></h1>
+                            <p>Personalize your low-carb journey and meet all your important health goals. We’re more than just a Keto calorie counter. Carb Manager integrates seamlessly with FitBit, Garmin, and hundreds of other apps and devices via Apple Health and Google Fit, helping you to:</p>
+                            <ul class="keto_features">
+                                <li>
+                                    <div>
+                                        <img src="./Styles/Images/bullet1.svg" alt="">
+                                        <p>Lose weight quickly</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="./Styles/Images/bullet1.svg" alt="">
+                                        <p>Reduce inflammation</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="./Styles/Images/bullet1.svg" alt="">
+                                        <p>Optimize energy</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="./Styles/Images/bullet1.svg" alt="">
+                                        <p>Gain mental clarity</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="./Styles/Images/bullet1.svg" alt="">
+                                        <p>Restore balance</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="./Styles/Images/bullet1.svg" alt="">
+                                        <p>Manage cravings</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="keto_article">
+                        <div class="keto_image_3">
+                            <img src="https://images.prismic.io/cm-website/26adf515-88d3-46ff-b5c4-f73eb3c6c78f_article_3%402x.jpg?auto=compress%2Cformat&w=0.5&auto=format&fit=max" alt="">
+                        </div>
+                        <div class="keto_content">
+                            <h1 class="keto_title">Keto for <b>life</b><span>.</span></h1>
+                            <p>Personalize your low-carb journey and meet all your important health goals. We’re more than just a Keto calorie counter. Carb Manager integrates seamlessly with FitBit, Garmin, and hundreds of other apps and devices via Apple Health and Google Fit, helping you to:</p>
+                            <ul class="keto_features">
+                                <li>
+                                    <div>
+                                        <img src="./Styles/Images/bullet1.svg" alt="">
+                                        <p>Lose weight quickly</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="./Styles/Images/bullet1.svg" alt="">
+                                        <p>Reduce inflammation</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="./Styles/Images/bullet1.svg" alt="">
+                                        <p>Optimize energy</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="./Styles/Images/bullet1.svg" alt="">
+                                        <p>Gain mental clarity</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="./Styles/Images/bullet1.svg" alt="">
+                                        <p>Restore balance</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="./Styles/Images/bullet1.svg" alt="">
+                                        <p>Manage cravings</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="keto_article rev">
+                        <div class="keto_image_4">
+                            <img src="https://images.prismic.io/cm-website/21877cf5-6425-41cf-b50d-41a16715d23b_article-4%402x.png?auto=compress%2Cformat&w=0.5&auto=format&fit=max" alt="">
+                        </div>
+                        <div class="keto_content margin_right">
+                            <h1 class="keto_title">Keto <b>beyond</b><span>.</span></h1>
+                            <p>Personalize your low-carb journey and meet all your important health goals. We’re more than just a Keto calorie counter. Carb Manager integrates seamlessly with FitBit, Garmin, and hundreds of other apps and devices via Apple Health and Google Fit, helping you to:</p>
+                            <ul class="keto_features">
+                                <li>
+                                    <div>
+                                        <img src="./Styles/Images/bullet1.svg" alt="">
+                                        <p>Lose weight quickly</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="./Styles/Images/bullet1.svg" alt="">
+                                        <p>Reduce inflammation</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="./Styles/Images/bullet1.svg" alt="">
+                                        <p>Optimize energy</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="./Styles/Images/bullet1.svg" alt="">
+                                        <p>Gain mental clarity</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="./Styles/Images/bullet1.svg" alt="">
+                                        <p>Restore balance</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <img src="./Styles/Images/bullet1.svg" alt="">
+                                        <p>Manage cravings</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="banner_keto">
+                <h1>Keep up with Keto & Low-Carb</h1>
+                <p>Easily start and maintain a healthy Keto lifestyle, with everything you need to know at your fingertips.
+                </p>
+                <button class="btn_red">
+                    <p>Get Started</p>
+                </button>
+            </div>
+            <div class="recommended_recipes">
+                <div class="recipes_container">
+                    <h2>Explore More Recipes</h2>
+                    <ul class="recipe_cards">
+                        <li>
+                            <a href="./articles.html">
+                                <img src="https://images.prismic.io/cm-website/151794ae-12c4-4742-9075-9111c0f224b7_recipes-cat-3%402x.jpg?auto=compress%2Cformat&w=0.5&auto=format&fit=max" alt="">
+                                <span>Keto <span>Easy</span><br>Recipes</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./articles.html">
+                                <img src="https://images.prismic.io/cm-website/4490a550-b77d-4765-ac5f-cc40e7d4a15b_recipes-cat-1%402x.jpg?auto=compress%2Cformat&w=0.5&auto=format&fit=max" alt="">
+                                <span>Keto <span>Snack</span> <br> Recipes</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./articles.html">
+                                <img src="https://images.prismic.io/cm-website/1626a4db-0c28-4f98-9253-de628c33ecce_recipes-cat-2%402x.jpg?auto=compress%2Cformat&w=0.5&auto=format&fit=max" alt="">
+                                <span>Keto <span>Breakfast</span><br>Recipes</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./articles.html">
+                                <img src="https://images.prismic.io/cm-website/7f814fd7-94d1-424e-a8ba-1f3fab810c95_recipes-cat-4%402x.jpg?auto=compress%2Cformat&w=0.5&auto=format&fit=max" alt="">
+                                <span>Keto <span>Smoothie</span><br>Recipes</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="btn_green">View All Recipes</buttonclass>
+                </div>
+            </div>
+            <div class="banner_premium">
+                <h1>Looking for Premium?</h1>
+                <p>Unlock all of Carb Manager's cutting-edge features with a Premium Membership.</p>
+                <button class="btn_red">
+                    <img src="https://d33wubrfki0l68.cloudfront.net/fa82656c6bf7198b32c8784df1eaae2fa6490722/ca255/_nuxt/img/95fcb90.svg" alt="">
+                    <p>Get Premium</p>
+                </button>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer_wrapper">
+                <button class="scroll_to_top">
+                    <span class="material-symbols-outlined bold">
+                        expand_less
+                    </span>
+                </button>
+                <div class="footer_container">
+                    <div>
+                        <a href="./index.html">
+                            <img src="./Styles/Images/LogoDark.png" alt=""/>
+                        </a>
+                    </div>
+                    <nav class="footer_nav">
+                        <ul class="menu-primary">
+                            <li><a href="./articles.html">Features</a></li>
+                            <li><a href="./articles.html">Premium</a></li>
+                            <li><a href="./articles.html">Keto Recipes</a></li>
+                            <li><a href="./cookbook.html">Keto Cookbook</a></li>
+                            <li><a href="./articles.html">Articles</a></li>
+                            <li><a href="./articles.html">About Us</a></li>
+                            <li><a href="./articles.html">Foods</a></li>
+                            <li><a href="./articles.html">Support</a></li>
+                            <li><a href="./login.html">Log In</a></li>
+                            <li><a href="./welcome.html">Join For Free</a></li>
+                        </ul>
+                        <ul class="menu-secondary">
+                            <li><a href="./articles.html">Gift Cards</a></li>
+                            <li><a href="./articles.html">Support Center</a></li>
+                            <li><a href="./articles.html">Forums</a></li>
+                            <li><a href="./articles.html">Terms of Service</a></li>
+                            <li><a href="./articles.html">Privacy Policy</a></li>
+                            <li><a href="./articles.html">Contact</a></li>
+                            <li><a href="./articles.html">System Status</a></li>
+                        </ul>
+                    </nav>
+                    <div class="social-media">
+                        <ul>
+                            <li>
+                                <div>
+                                    <a href="https://www.facebook.com/carbmanager">
+                                        <img src="https://pnggrid.com/wp-content/uploads/2021/05/FB-Logo-768x1476.png" alt="">
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="https://www.instagram.com/carbmanagerapp/">
+                                        <img src="https://www.logo.wine/a/logo/Instagram/Instagram-Glyph-Color-Logo.wine.svg" alt="">
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="https://www.pinterest.com/carbmanagerapp">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png" alt="">
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="https://www.youtube.com/channel/UCmVTbl7NTm_Cd4rA8XJWUVw?sub_confirmation=1">
+                                        <img src="https://www.logo.wine/a/logo/YouTube/YouTube-Icon-Full-Color-Logo.wine.svg" alt="">
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_copyright">© 2010-2022 Wombat Apps LLC. All Rights Reserved.</div>
+                    <div class="footer_disclaimer">Carb Manager's content is for informational and educational purposes only. Our website is not intended to be a substitute for professional <br>
+                    medical advice, diagnosis, or treatment.</div>
+                    
+                </div>
+            </div>
+
         </div>
     </div>
+    
   </body>
 </html>
 <script src="./Scripts/script.js"></script>
+<script src="./Scripts/index.js"></script>

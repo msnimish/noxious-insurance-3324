@@ -19,6 +19,8 @@
 }
 body {
     font-family: proxima,Helvetica,Arial,sans-serif;
+    height:5000px;
+    position: relative;
 }
 .btn_green{
     color: white;
@@ -153,6 +155,7 @@ body {
     position: sticky;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 0px 0px 50px 50px;
+    z-index: 10;
 }
 .scroll_header_wrapper{
     display: flex;
@@ -208,12 +211,18 @@ body {
 .scroll_header_userSettings>button{
     margin-left:25px;
 }
+body>footer{
+    width:100vw;
+    position: absolute;
+    bottom:0;
+    max-height: 600px;
+}
 .footer_wrapper{
     display: none;
     margin-top: 30px;
     width:100%;
     /* height: 100vh; */
-    position: absolute;
+    position: relative;
     bottom:0px;
     /* left:0; */
     /* transform: translateX(-50%, -50%); */
@@ -241,31 +250,12 @@ body {
     position:relative;
     top:14px;
 }
-.footer{
-    margin-top:30px;
-    display: block;
-    /* position: fixed; */
-    bottom:0px;
-    left:0px;
-}
-.footer_wrapper{
-    /* margin-top: 30px; */
-    width:100%;
-    position: absolute;
-    bottom:0;
-    left:0;
-    /* transform: translateX(-50%, -50%); */
-    /* display: block; */
-    /* min-height: 800px; */
-    /* height:2em; */
-    /* z-index:-1; */
-}
 .footer_container{
     width:60%;
     margin: auto;
     text-align: center;
-    /* position: relative;  */
-    /* bottom:0; */
+    /* position: absolute;
+    bottom:0; */
 }
 .footer_container>div{
     width: 100%;
@@ -378,3 +368,231 @@ body {
 
 
 
+.main-content{
+    position:absolute;
+    top:0px;
+    width:100vw;
+    /* height:10vh; */
+}
+.hero_section{
+    width:100vw;
+    padding-top:80px;
+    position: relative;
+    top:0px;
+    min-height: 400px;
+    display: block;
+    /* background-color: #007aff; */
+    /* border: 1px solid red; */
+    /* border-bottom-left-radius: 300px; */
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    width:100%;
+    height:100%;
+    background-color: black;
+    opacity: 0.4;
+    z-index: 1;
+}
+.hero_section>img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+}
+.hero_container{
+    width: 700px;
+    z-index: 5;
+    /* height: auto; */
+    margin: 0px auto 0px auto;
+    /* position: relative; */
+    /* display: flex;
+    justify-content: space-around;
+    flex-direction: row; */
+    /* border: 1px solid red; */
+}
+.hero_content{
+    width: 640px;
+    z-index: inherit;
+    /* height:400px; */
+    margin:80px 0 32px 0;
+    /* padding-right: 100px; */
+    position: relative;
+    /* display: block; */
+    /* margin-right: 30px; */
+}
+.hero_content>h1{
+    width:300px;
+    font-size: 48px;
+    font-weight: 1000;
+    /* line-height: 72px; */
+    color:white;
+    margin: 0 0 16px;
+}
+.hero_content>.text_small{
+    width:300px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 18px;
+    color:white;
+    margin-bottom: 10px;
+}
+.hero_content>button{
+    margin-bottom: 100px;
+}
+
+
+.social_media_section{
+    margin:64px 0;
+}
+.cm_youtube{
+    text-align: left;
+    margin-bottom: 60px;
+}
+.youtube_container{
+    width:700px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+.youtube_container>h2{
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 36px;
+    color:#333;
+    margin-bottom: 32px;
+    position: relative;
+    padding-left: 56px;
+    text-align: left;
+}
+.youtube_container>h2::before{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    content:"";
+    width: 40px;
+    height: 30px;
+    background: url("https://www.logo.wine/a/logo/YouTube/YouTube-Icon-Full-Color-Logo.wine.svg");
+    background-size: cover;
+    transform: translateY(-50%);
+}
+.videos{
+    width:700px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-bottom: 32px;
+}
+.videos>li{
+    list-style: none;
+    /* height:250px; */
+}
+.videos>li>a>img{
+    width:100%;
+    position: relative;
+    top:0;
+}
+.videos>li>a>img::before{
+    position: absolute;
+    top:0;
+    left: 0;
+    display: block;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    /* opacity: 0; */
+    content:"";
+    background: linear-gradient(180deg,transparent 45%, rgba(0,0,0,0.28) 72%,rgba(0,0,0,0.65));
+    transition: 0.15s ease-in-out;
+}
+.videos>li>a>img:hover{
+    opacity: 1;
+}
+.youtube_container>button{
+    position: relative;
+    padding-left: 40px;
+}
+.youtube_container>button::before{
+    content:"";
+    width:8px;
+    height:8px;
+    position: absolute;
+    background: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTEgMTQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTExIDYuODZ2LjI4YS43Ni43NiAwIDAxLS4zNy42NUwxLjY4IDEzYy0uNTQuMzItLjgyLjMyLTEuMDYuMThsLS4yNS0uMTRhLjc2Ljc2IDAgMDEtLjM3LS42M1YxLjU5QS43Ni43NiAwIDAxLjM3Ljk0TC42Mi44Yy4yNC0uMTQuNTItLjE0IDEuMjIuMjdsOC43OSA1LjE0YS43Ni43NiAwIDAxLjM3LjY1eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==");
+    background-repeat: no-repeat;
+    top:12px;
+    left:20px;
+    /* border: 1px solid red; */
+}
+.insta_container{
+    width:700px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+.insta_container>h2{
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 36px;
+    color:#333;
+    margin-bottom: 32px;
+    position: relative;
+    padding-left: 56px;
+    text-align: left;
+}
+.insta_container>h2::before{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    content:"";
+    width: 40px;
+    height: 30px;
+    background: url("https://www.logo.wine/a/logo/Instagram/Instagram-Glyph-Color-Logo.wine.svg");
+    background-size: cover;
+    transform: translateY(-50%);
+}
+.posts{
+    width:700px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-bottom: 32px;
+}
+.posts>li{
+    list-style: none;
+    height: 150px;
+}
+.posts>li>a>img{
+    width:100%;
+    height: 100%;
+    position: relative;
+    top:0;
+}
+.posts>li>a>img::before{
+    position: absolute;
+    top:0;
+    left: 0;
+    display: block;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    /* opacity: 0; */
+    content:"";
+    background: linear-gradient(180deg,transparent 45%, rgba(0,0,0,0.28) 72%,rgba(0,0,0,0.65));
+    transition: 0.15s ease-in-out;
+}
+.posts>li>a>img:hover{
+    opacity: 1;
+}
+.insta_container>button{
+    position: relative;
+    padding-left: 40px;
+}
+.insta_container>button::before{
+    content:"";
+    width:12px;
+    height:12px;
+    position: absolute;
+    background: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTggMTgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEzIDBINWE1IDUgMCAwMC01IDV2OGE1IDUgMCAwMDUgNWg4YTUgNSAwIDAwNS01VjVhNSA1IDAgMDAtNS01em0zLjI1IDEzQTMuMjYgMy4yNiAwIDAxMTMgMTYuMjVINUEzLjI2IDMuMjYgMCAwMTEuNzUgMTNWNUEzLjI2IDMuMjYgMCAwMTUgMS43NWg4QTMuMjYgMy4yNiAwIDAxMTYuMjUgNXY4em0tMS41LTguNzVhMSAxIDAgMTEtMiAwIDEgMSAwIDAxMiAwek05IDQuNUE0LjUgNC41IDAgMTAxMy41IDkgNC40OSA0LjQ5IDAgMDA5IDQuNXptMCA3LjI1YTIuNzUgMi43NSAwIDExMC01LjUgMi43NSAyLjc1IDAgMDEwIDUuNXoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=");
+    background-repeat: no-repeat;
+    top:10px;
+    left:20px;
+    /* border: 1px solid red; */
+}
