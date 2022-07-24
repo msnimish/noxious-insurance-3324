@@ -1,28 +1,31 @@
-let form=document.querySelector('form');
-let backBtn=document.querySelector(".container>span");
-backBtn.addEventListener("click", function(){
-    window.location.href ="welcome.html";
-})
+let form = document.querySelector("form");
+let backBtn = document.querySelector(".container>span");
+backBtn.addEventListener("click", function () {
+  window.location.href = "welcome.html";
+});
 
-form.addEventListener('submit', signup);
+form.addEventListener("submit", signup);
 
-let userData=JSON.parse(localStorage.getItem("userData"))||[];
-function signup(event){
-    event.preventDefault();
-    let details={
-        name:form.name.value,
-        email:form.email.value,
-        password:form.password.value
+let userData = JSON.parse(localStorage.getItem("userData")) || [];
+function signup(event) {
+  event.preventDefault();
+  let details = {
+    name: form.name.value,
+    email: form.email.value,
+    password: form.password.value,
+  };
+  // console.log(details);
+  let isSame = false;
+  userData.forEach(function (e) {
+    if (e.email === details.email) {
+      isSame = true;
     }
-    console.log(details);
-    userData.forEach(function(e){
-        if(e.email===details.email){
-            alert("Email id already registered. Please Log In");
-            return;
-        }
-    });
+  });
+  if (isSame) {
+    alert("Email id already registered. Please Log In");
+  } else {
     userData.push(details);
     localStorage.setItem("userData", JSON.stringify(userData));
-    window.location.href="login.html";
-    
+    window.location.href = "login.html";
+  }
 }

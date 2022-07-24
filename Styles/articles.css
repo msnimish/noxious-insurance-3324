@@ -896,14 +896,16 @@ body>footer{
     /* margin-bottom: 30px; */
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .accountCreate>form>input{
     margin:0px 5px;
-    padding: 2px 16px;
+    padding: 0px 16px;
     border-radius: 50px;
     border: none;
     font-size: 10px;
 }
-.accountCreate>form>button{
+.accountCreate>form>input[type="submit"]{
+    margin: 0px;
     padding: 8px 16px;
 }

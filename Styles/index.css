@@ -452,6 +452,10 @@ html {
   border-radius: 50px;
   border: none;
 }
+.hero_content > form > input[type="submit"] {
+    margin:0px;
+    padding:10px 20px;
+}
 .appLogos {
   display: flex;
   flex-direction: row;

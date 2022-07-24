@@ -1,80 +1,82 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-@media all and (min-width: 200px) and (max-width:400px) {
-    .container{
-        width:100vw;
-    }
+@media all and (min-width: 200px) and (max-width: 400px) {
+  .container {
+    width: 100vw;
+  }
 }
 
-.layout-welcome{
-    position: absolute;
-    top:0px;
-    display: flex;
-    justify-content: center;
-    width:100vw;
-    height: 100vh;
-    /* margin: auto; */
-    background-color: #f6f8fb;
-    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/005/316/506/small/abstract-wave-element-on-gray-background-with-modern-stripes-illustration-vector.jpg") no-repeat;
+.layout-welcome {
+  position: absolute;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: auto;
+  /* margin: auto; */
+  background-color: #f6f8fb;
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/005/316/506/small/abstract-wave-element-on-gray-background-with-modern-stripes-illustration-vector.jpg")
+    no-repeat;
 }
 
-.container{
-    width:416px;
-    height: max-content;
-    margin: 30px auto 30px auto;
-    border-radius: 20px;
-    /* margin-top: 30px; */
-    text-align: center;
-    background-color: white;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    padding: 1.5rem 2.5rem;
+.container {
+  width: 416px;
+  height: max-content;
+  margin: 30px auto 30px auto;
+  border-radius: 20px;
+  /* margin-top: 30px; */
+  text-align: center;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 1.5rem 2.5rem;
 }
-.header-welcome{
-    width:100%;
-    height: 60px;
+.header-welcome {
+  width: 100%;
+  height: 60px;
 }
-.header-welcome>img{
-    height:100%;
+.header-welcome > img {
+  height: 100%;
 }
-.welcome-content{
-    margin: 2.5rem auto;
+.welcome-content {
+  margin: 2.5rem auto;
 }
-.welcome-content>video{
-    width:100%;
-    height:300px;
+.welcome-content > video {
+  width: 100%;
+  height: 300px;
 }
-.welcome-content>h2{
-    margin:1.875rem 0 1rem;
-    font-weight: 600;
-    color:#333;
-    letter-spacing: .01833em;
+.welcome-content > h2 {
+  margin: 1.875rem 0 1rem;
+  font-weight: 600;
+  color: #333;
+  letter-spacing: 0.01833em;
 }
-.welcome-content>p{
-    margin: 1rem 0;
-    color:#7b7f84;
-    font-size: 0.8rem;
-    line-height: 1.35;
+.welcome-content > p {
+  margin: 1rem 0;
+  color: #7b7f84;
+  font-size: 0.8rem;
+  line-height: 1.35;
 }
-.welcome-footer>.btn_green{
-    padding: 11px 70px;
-    font-weight: 700;
-    font-size: 14px;
-    transition: background-color .3s cubic-bezier(.25,.8,.5,1),opacity .4s cubic-bezier(.25,.8,.5,1)
+.welcome-footer > .btn_green {
+  padding: 11px 70px;
+  font-weight: 700;
+  font-size: 14px;
+  transition: background-color 0.3s cubic-bezier(0.25, 0.8, 0.5, 1),
+    opacity 0.4s cubic-bezier(0.25, 0.8, 0.5, 1);
 }
-.welcome-footer>.btn_green:hover{
-    background-color: #1eda9b;
+.welcome-footer > .btn_green:hover {
+  background-color: #1eda9b;
 }
-.welcome-footer>p{
-    margin: 0.5rem 0;
-    text-align: center;
-    font-size: 0.8rem;
-    color:#333;
+.welcome-footer > p {
+  margin: 0.5rem 0;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #333;
 }
-.welcome-footer>p>a{
-    color:var(--green_secondary);
-    text-decoration: none;
-    font-weight: 700;
+.welcome-footer > p > a {
+  color: var(--green_secondary);
+  text-decoration: none;
+  font-weight: 700;
 }
