@@ -342,9 +342,13 @@ height:5000px;
     text-decoration: none;
     list-style: none;
 }
+.social-media>ul>li>div>a{
+    padding:20px;
+}
 .social-media>ul>li>div{
     width:48px;
     height:48px;
+    background-color: white;
     box-shadow: rgba(99, 99, 99, 0.2) 8px 2px 8px 0px;
     border-radius: 50px;
     filter:grayscale(100%);
@@ -360,6 +364,9 @@ height:5000px;
     /* width:50%; */
     position: relative;
     top: 25%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
 
 .footer_copyright{
@@ -792,4 +799,8 @@ height:5000px;
 }
 .recipes_container>button{
     margin-top:64px;
+}
+.testimonials{
+    padding:120px 0;
+    width: 100%;
 }
